@@ -1,0 +1,191 @@
+:root {
+    
+    
+    --bg1: #fffcfc;
+    --bg2: rgb(45, 20, 136);
+    --body: rgb(250, 242, 242);
+    --brand: #000000;
+    --white: rgb(255, 255, 255);
+    --p: rgb(46, 50, 110);
+    --bg5: rgb(255, 255, 255);
+    --bg6: rgb(31, 25, 30);
+}
+
+body {
+    background-color: var(--bg1);
+}
+/* bannner */
+#banner {
+    background-image: url(https://img.freepik.com/free-photo/sky-clouds-cinematic-clouds-wallpaper-6_1562-743.jpg?t=st=1711335219~exp=1711338819~hmac=9efd2a5d710048addccb88fcff32ade2ed1ddf843b61af92dc2a9d15d756c1de&w=740);
+    height: 100vh;
+    background-size: cover;
+}
+
+ /* end of banner */
+
+ /* navbar  */
+ .navbar {
+    background: linear-gradient(to bottom, rgba(17, 14, 219, 0.821), rgba(56, 32, 110, 0.993));
+}
+
+.navbar .nav-link:hover {
+    color: var(--white) !important;
+}
+/* end of navbar */
+
+.btn {
+    padding: 15px 30px;
+    transition: all 0.4s ease;
+    font-weight: 800;
+    border-radius: 30px;
+}
+.btn-brand {
+    background-color: var(--white);
+}
+
+.btn-brand:hover {
+    background-color: transparent;
+    color: var(--white);
+    border-color: var(--white);
+}
+
+section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+#about {
+    background: var(--bg6);
+}
+
+#services {
+    background: var(--bg5);
+}
+
+.icon-box-img {
+    width: 40%;
+
+}
+
+.btn-outline-brand {
+    background-color: transparent;
+    color: var(--brand);
+    border-color: var(--brand);
+}
+
+.btn-outline-brand:hover {
+    background-color: var(--bg1);
+    color: var(--bg5);
+}
+
+.card {
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.card:hover {
+    background-color: var(--bg6);
+}
+
+.card:hover .card-title,
+.card:hover .card-text,
+.card:hover .btn {
+    color: rgb(255, 255, 255);
+}
+
+#cta {
+    position: relative;
+    opacity: 0.90;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* parallax efect */
+    background-attachment: fixed;
+    /* parellax effect / to remove to effect set to normal */
+    background-image: url(https://img.freepik.com/free-vector/scary-graveyard-scene-with-moon-flying-bats_1017-34386.jpg?t=st=1711337973~exp=1711341573~hmac=3476624f6e956c735793adbf2ce9af574674f33d0a803117ef42c61994bc113c&w=826);
+    min-height: 70vh;
+}
+#reviews {
+    background-color: var(--white);
+}
+
+.testimonials {
+    background-color: var(--brand);
+    padding: 30px;
+}
+
+.testimonials img {
+    width: 65px;
+    border-radius: 30px;
+    height: 65px;
+}
+
+#reviews a {
+    color: var(--white);
+}
+
+.faq-section {
+    max-width: 800px;
+    margin: auto;
+}
+
+.accordion-item{
+    margin-bottom: 20px;
+    border-radius: 0;
+}
+
+#faq {
+    background-image: url(https://img.freepik.com/free-vector/scary-graveyard-scene-with-moon-flying-bats_1017-34386.jpg?t=st=1711337973~exp=1711341573~hmac=3476624f6e956c735793adbf2ce9af574674f33d0a803117ef42c61994bc113c&w=826);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.accordion-button{
+    background-color: #fffcfc;
+    border: none;
+    border-bottom: 1px solid #0f0a0a;
+    border-radius: 0;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #343a40;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.accordion-body {
+    border-left: 3px solid var(--bg2);
+    padding: 10px 15px;
+    margin-left: 0;
+    background-color: #f8f9fa;
+}
+
+.faq-answer p {
+    margin-bottom: 0;
+}
+
+.accordion-button:focus{
+    box-shadow: none;
+}
+
+.accordion-button:not(.collapsed) {
+    color: var(--brand);
+}
+ /* hover effect for FAQ queston  */
+.accordion-button:hover {
+    background-color: var(--body);
+    color: var(--bg2);
+}
+
+/* adjust accordion icon*/
+.accordion-button::after {
+    font-family: "font awesome 5 free";
+    content: ""; /* plus icon */
+    float: right;
+    font-weight: 900;
+    margin-left: auto;
+}
+
+.accordion-button[aria-expanded="true"]::after {
+    content: ""; /* minus icon*/
+}
